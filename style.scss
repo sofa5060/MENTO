@@ -1,0 +1,138 @@
+// Fonts Imports
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:500|Roboto:400,500,700,900&display=swap");
+
+@font-face {
+  font-family: gilroy;
+  src: url(./Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf);
+}
+
+@font-face {
+  font-family: gilroy-bold;
+  src: url(./Gilroy-FREE/Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+
+// Default styles
+$main-color: #06cb99;
+$second-color: #28c76f;
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: gilroy-bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 65px;
+  line-height: 80px;
+}
+
+p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main-button {
+  background: linear-gradient(180deg, $main-color 0%, $second-color 100%);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 20px;
+  max-height: min-content;
+  height: 100%;
+}
+
+//Start of home page
+
+header {
+  // NavBar Styling
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 50px;
+    justify-content: space-between;
+
+    .logo {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: $main-color;
+      align-self: center;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      align-self: center;
+
+      a {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #333333;
+        margin: 0 20px;
+      }
+    }
+  }
+
+  // Start of herosection
+  .hero-section {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 0 50px;
+
+    .left {
+      max-width: 420px;
+      h1 {
+        color: #333;
+        span {
+          color: $second-color;
+        }
+      }
+
+      p {
+        color: #555;
+        margin: 17px 0 30px 0;
+      }
+
+      a {
+        text-transform: uppercase;
+
+        &:nth-child(2) {
+          font-family: "Poppins", sans-serif;
+          color: #333;
+          font-size: 15px;
+          margin: 0 0 0 27px;
+        }
+      }
+    }
+  }
+}

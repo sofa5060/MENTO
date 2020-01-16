@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:500|Roboto:400,500,700,900&display=swap");
+@font-face {
+  font-family: gilroy;
+  src: url(./Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf);
+}
+
+@font-face {
+  font-family: gilroy-bold;
+  src: url(./Gilroy-FREE/Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: gilroy-bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 65px;
+  line-height: 80px;
+}
+
+p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main-button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#06cb99), to(#28c76f));
+  background: linear-gradient(180deg, #06cb99 0%, #28c76f 100%);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 20px;
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  height: 100%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .logo {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #06cb99;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+header nav ul a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #333333;
+  margin: 0 20px;
+}
+
+header .hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 0 50px;
+}
+
+header .hero-section .left {
+  max-width: 420px;
+}
+
+header .hero-section .left h1 {
+  color: #333;
+}
+
+header .hero-section .left h1 span {
+  color: #28c76f;
+}
+
+header .hero-section .left p {
+  color: #555;
+  margin: 17px 0 30px 0;
+}
+
+header .hero-section .left a {
+  text-transform: uppercase;
+}
+
+header .hero-section .left a:nth-child(2) {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-size: 15px;
+  margin: 0 0 0 27px;
+}
+/*# sourceMappingURL=style.css.map */
