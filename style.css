@@ -1,11 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:500|Roboto:400,500,700,900&display=swap");
 @font-face {
   font-family: gilroy;
-  src: url(./Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf);
+  src: url(./EM-Gilroy/Gilroy-Medium.ttf);
 }
 
 @font-face {
   font-family: gilroy-bold;
+  src: url(./EM-Gilroy/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: gilroy-semiBold;
+  src: url(./EM-Gilroy/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: gilroy-extraBold;
   src: url(./Gilroy-FREE/Gilroy-FREE/Gilroy-ExtraBold.otf);
 }
 
@@ -38,6 +48,15 @@ p {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+}
+
+.sub-title {
+  font-family: Gilroy-semiBold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .main-button {
@@ -116,6 +135,9 @@ header .hero-section {
 
 header .hero-section .left {
   max-width: 420px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 header .hero-section .left h1 {
@@ -140,5 +162,99 @@ header .hero-section .left a:nth-child(2) {
   color: #333;
   font-size: 15px;
   margin: 0 0 0 27px;
+}
+
+header .hero-section .right {
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 0 0 auto;
+  overflow: hidden;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .hero-section .right .main {
+  height: 100%;
+  width: 100%;
+}
+
+.section2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.section2 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section2 .left .main-video {
+  max-width: 393px;
+  max-height: 304px;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.section2 .left .secondery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section2 .left .secondery .secondery-video {
+  width: 365px;
+  height: 150px;
+  margin: auto 0 0 -50px;
+  z-index: -1;
+}
+
+.section2 .left .secondery .triggers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 50px 0 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.move {
+  -webkit-animation-name: main;
+          animation-name: main;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transform: translate(-330px, -35px) scale(1.5);
+          transform: translate(-330px, -35px) scale(1.5);
+  z-index: 20 !important;
+}
+
+@-webkit-keyframes main {
+  from {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
+  to {
+    -webkit-transform: translate(-330px, -35px) scale(1.5);
+            transform: translate(-330px, -35px) scale(1.5);
+  }
+}
+
+@keyframes main {
+  from {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
+  to {
+    -webkit-transform: translate(-330px, -35px) scale(1.5);
+            transform: translate(-330px, -35px) scale(1.5);
+  }
 }
 /*# sourceMappingURL=style.css.map */

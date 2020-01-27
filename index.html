@@ -34,8 +34,34 @@
               <a href="#">View Menu</a>
           </div>
         </div>
-        <div class="right"></div>
+        <div class="right">
+          <video autoplay loop muted class="main">
+            <source src="videos/Pexels Videos 2301592.mp4" type="video/mp4">
+          </video>
+        </div>
       </section>
     </header>
+    <section class="section2">
+      <div class="left">
+        <video autoplay loop muted class="main-video">
+          <source src="videos/Pexels Videos 1111421.mp4" type="video/mp4">
+        </video>
+        <div class="secondery">
+          <div class="triggers">
+            <h3 onclick={move2()}>Prev</h3>
+            <h3 onclick={move()}>Play</h3>
+          </div>
+          <video autoplay loop muted class="secondery-video">
+            <source src="videos/video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="right">
+        <h5 class="sub-title">
+          About
+        </h5>
+      </div>
+    </section>
+    <script src="./app.js"></script>
   </body>
 </html>
