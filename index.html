@@ -30,29 +30,29 @@
             tasting food and better feeling while you eating with us
           </p>
           <div class="btns">
-              <a href="#"  class="main-button">RESERVE a Table</a>
-              <a href="#">View Menu</a>
+            <a href="#" class="main-button">RESERVE a Table</a>
+            <a href="#">View Menu</a>
           </div>
         </div>
         <div class="right">
           <video autoplay loop muted class="main">
-            <source src="videos/Pexels Videos 2301592.mp4" type="video/mp4">
+            <source src="videos/Pexels Videos 2301592.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
     </header>
     <section class="section2">
       <div class="left">
-        <video autoplay loop muted class="main-video">
-          <source src="videos/Pexels Videos 1111421.mp4" type="video/mp4">
+        <video loop muted class="main-video">
+          <source src="videos/Pexels Videos 1111421.mp4" type="video/mp4" />
         </video>
         <div class="secondery">
           <div class="triggers">
-            <h3 onclick={move2()}>Prev</h3>
-            <h3 onclick={move()}>Play</h3>
+            <h3 onclick="{showPrevVideo()}">PREV</h3>
+            <h3 class="main" onclick="{showNextVideo()}">NEXT</h3>
           </div>
-          <video autoplay loop muted class="secondery-video">
-            <source src="videos/video.mp4" type="video/mp4">
+          <video loop muted class="secondery-video">
+            <source src="videos/video.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -60,6 +60,14 @@
         <h5 class="sub-title">
           About
         </h5>
+        <h2>Discover the best <span>food</span> in the town.</h2>
+        <h6 class="body-2">
+          The TIESTO restaurant is the best restaurant founded in 1976 as the
+          first and only restaurant in Cairo provide the best taste and great
+          place with good price and huge set of different types and the best
+          stuff in Egypt and middle east
+        </h6>
+        <a class="main-button">View Menu</a>
       </div>
     </section>
     <script src="./app.js"></script>

@@ -1,7 +1,41 @@
-const move = () => {
-  document.getElementsByClassName("secondery-video")[0].classList.add("move");
+const showNextVideo = () => {
+  document
+    .getElementsByClassName("secondery-video")[0]
+    .classList.add("move-sec-video-left");
+  document
+    .getElementsByClassName("secondery-video")[0]
+    .classList.remove("move-sec-video-right");
+  document
+    .getElementsByClassName("main-video")[0]
+    .classList.add("move-main-video-right");
+  document
+    .getElementsByClassName("main-video")[0]
+    .classList.remove("move-main-video-left");
+  document
+    .getElementsByClassName("triggers")[0]
+    .children[0].classList.add("main");
+  document
+    .getElementsByClassName("triggers")[0]
+    .children[1].classList.remove("main");
 };
 
-const move2 = () => {
-  document.getElementsByClassName("secondery-video")[0].classList.remove("move");
+const showPrevVideo = () => {
+  document
+    .getElementsByClassName("secondery-video")[0]
+    .classList.add("move-sec-video-right");
+  document
+    .getElementsByClassName("secondery-video")[0]
+    .classList.remove("move-sec-video-left");
+  document
+    .getElementsByClassName("main-video")[0]
+    .classList.add("move-main-video-left");
+  document
+    .getElementsByClassName("main-video")[0]
+    .classList.remove("move-main-video-right");
+  document
+    .getElementsByClassName("triggers")[0]
+    .children[1].classList.add("main");
+  document
+    .getElementsByClassName("triggers")[0]
+    .children[0].classList.remove("main");
 };

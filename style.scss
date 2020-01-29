@@ -39,6 +39,7 @@ li {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1 {
@@ -47,6 +48,14 @@ h1 {
   font-weight: normal;
   font-size: 65px;
   line-height: 80px;
+}
+
+h2 {
+  font-family: Gilroy-SemiBold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 50px;
 }
 
 p {
@@ -64,6 +73,14 @@ p {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.body-2 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
 }
 
 .main-button {
@@ -171,51 +188,138 @@ header {
 
 .section2 {
   max-width: 1200px;
+  padding: 200px 50px;
   margin: 0 auto;
-  padding: 0 50px;
+  display: flex;
+
   .left {
     display: flex;
+    align-self: flex-end;
+
     .main-video {
-      max-width: 393px;
-      max-height: 304px;
-      height: 100%;
-      width: 100%;
-      z-index: 0;
+      width: 393px;
+      height: 304px;
+      z-index: 1;
     }
 
     .secondery {
+      margin: 0 0 0 -100px;
+    }
+
+    .secondery-video {
+      width: 281px;
+      height: 218px;
+      z-index: -2;
+    }
+
+    .triggers {
       display: flex;
-      flex-direction: column;
-      .secondery-video {
-        width: 365px;
-        height: 150px;
-        margin: auto 0 0 -50px;
-        z-index: -1;
+      align-self: flex-end;
+      justify-content: flex-end;
+      margin: 51px 0 0 0;
+
+      h3 {
+        font-family: Gilroy-semiBold;
+        color: rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+
+        &:nth-child(1) {
+          margin: 0 10px 0 0;
+        }
       }
 
-      .triggers {
-        display: flex;
-        margin: 0 50px 0 0;
-        justify-content: flex-end;
+      .main {
+        color: black;
       }
+    }
+  }
+
+  .right {
+    padding: 0 70px;
+    h5 {
+      color: $main-color;
+    }
+
+    h2 {
+      text-transform: uppercase;
+
+      span {
+        color: $main-color;
+      }
+    }
+
+    h6{
+      color: rgba(0, 0, 0, 0.6);
+      margin: 13px 0 40px 0;
+    }
+
+    a{
+      padding: 10px 40px;
+      text-transform: uppercase;
     }
   }
 }
 
-// habd
+// .move-sec-video-left {
+//   animation-name: move-sec-video-left;
+//   animation-duration: 2s;
+//   transform: translate(-330px, -35px) scale(1.5);
+//   z-index: 20 !important;
+// }
 
-.move {
-  animation-name: main;
-  animation-duration: 2s;
-  transform: translate(-330px, -35px) scale(1.5);
-  z-index: 20 !important;
-}
+// .move-sec-video-right {
+//   animation-name: move-sec-video-right;
+//   animation-duration: 2s;
+//   transform: translate(0px, 0px) scale(1);
+//   z-index: 20 !important;
+// }
 
-@keyframes main {
-  from {
-    transform: translate(0, 0) scale(1);
-  }
-  to {
-    transform: translate(-330px, -35px) scale(1.5);
-  }
-}
+// .move-main-video-right {
+//   animation-name: move-main-video-right;
+//   animation-duration: 2s;
+//   transform: translate(330px, 35px) scale(0.7);
+//   z-index: 20 !important;
+// }
+
+// .move-main-video-left {
+//   animation-name: move-main-video-left;
+//   animation-duration: 2s;
+//   transform: translate(0px, 0px) scale(1);
+//   z-index: 20 !important;
+// }
+
+// @keyframes move-sec-video-left {
+//   from {
+//     transform: translate(0, 0) scale(1);
+//   }
+//   to {
+//     transform: translate(-330px, -35px) scale(1.5);
+//   }
+// }
+
+// @keyframes move-sec-video-right {
+//   from {
+//     transform: translate(-330px, -35px) scale(1.5);
+//   }
+//   to {
+//     transform: translate(0, 0) scale(1);
+//   }
+// }
+
+// @keyframes move-main-video-right {
+//   from {
+//     transform: translate(0px, 0px) scale(1);
+//   }
+//   to {
+//     transform: translate(330px, 35px) scale(0.7);
+//   }
+// }
+
+// @keyframes move-main-video-left {
+//   from {
+//     transform: translate(330px, 35px) scale(0.7);
+//   }
+//   to {
+//     transform: translate(0, 0) scale(1);
+//   }
+// }
