@@ -1,7 +1,7 @@
 // Fonts Imports
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:500|Roboto:400,500,700,900&display=swap");
 
+// Fonts
 @font-face {
   font-family: gilroy;
   src: url(./EM-Gilroy/Gilroy-Medium.ttf);
@@ -26,21 +26,17 @@
 $main-color: #06cb99;
 $second-color: #28c76f;
 $font-color: #333;
+$footer-color: #3b4b52;
 
-// General Styles
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  align-self: center;
 }
 
 h1 {
@@ -127,8 +123,98 @@ p {
   }
 }
 
-//Start of home page
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// Animations
+@keyframes moveTweetsLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-1908px);
+  }
+}
+
+// .move-sec-video-left {
+//   animation-name: move-sec-video-left;
+//   animation-duration: 2s;
+//   transform: translate(-330px, -35px) scale(1.5);
+//   z-index: 20 !important;
+// }
+
+// .move-sec-video-right {
+//   animation-name: move-sec-video-right;
+//   animation-duration: 2s;
+//   transform: translate(0px, 0px) scale(1);
+//   z-index: 20 !important;
+// }
+
+// .move-main-video-right {
+//   animation-name: move-main-video-right;
+//   animation-duration: 2s;
+//   transform: translate(330px, 35px) scale(0.7);
+//   z-index: 20 !important;
+// }
+
+// .move-main-video-left {
+//   animation-name: move-main-video-left;
+//   animation-duration: 2s;
+//   transform: translate(0px, 0px) scale(1);
+//   z-index: 20 !important;
+// }
+
+// @keyframes move-sec-video-left {
+//   from {
+//     transform: translate(0, 0) scale(1);
+//   }
+//   to {
+//     transform: translate(-330px, -35px) scale(1.5);
+//   }
+// }
+
+// @keyframes move-sec-video-right {
+//   from {
+//     transform: translate(-330px, -35px) scale(1.5);
+//   }
+//   to {
+//     transform: translate(0, 0) scale(1);
+//   }
+// }
+
+// @keyframes move-main-video-right {
+//   from {
+//     transform: translate(0px, 0px) scale(1);
+//   }
+//   to {
+//     transform: translate(330px, 35px) scale(0.7);
+//   }
+// }
+
+// @keyframes move-main-video-left {
+//   from {
+//     transform: translate(330px, 35px) scale(0.7);
+//   }
+//   to {
+//     transform: translate(0, 0) scale(1);
+//   }
+// }
+
+//Start of home page
 header {
   // NavBar Styling
   nav {
@@ -139,16 +225,8 @@ header {
     padding: 35px 50px;
     justify-content: space-between;
 
-    .logo {
-      font-family: "Roboto", sans-serif;
-      font-style: normal;
-      font-weight: 900;
-      font-size: 26px;
-      line-height: 30px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+    a {
       color: $main-color;
-      align-self: center;
     }
 
     ul {
@@ -387,8 +465,7 @@ header {
   }
 }
 
-// section 4
-
+// Section 4
 .section4 {
   text-align: center;
 
@@ -410,7 +487,7 @@ header {
   .marquee {
     display: flex;
     align-self: center;
-    margin: 64px 0 0 0;
+    margin: 64px 0;
     overflow: hidden;
 
     &1,
@@ -421,7 +498,7 @@ header {
       animation-name: moveTweetsLeft;
       animation-duration: 20s;
       animation-iteration-count: infinite;
-      animation-timing-function:linear;
+      animation-timing-function: linear;
 
       img {
         display: block;
@@ -435,76 +512,67 @@ header {
   }
 }
 
-@keyframes moveTweetsLeft{
-  from{
-    transform: translateX(0);
+// Footer
+footer {
+  background: $footer-color;
+  padding: 40px 120px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: #fff;
   }
 
-  to{
-    transform: translateX(-1908px);
+  .social-links {
+    margin: 25px 0 0 0;
+
+    a {
+      margin: 0 40px 0 0;
+    }
+  }
+
+  .col {
+    h6 {
+      color: #fff;
+      text-transform: unset;
+      margin: 0 0 20px 0;
+    }
+
+    h4 {
+      font-family: gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 25px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    form{
+      display: flex;
+      max-width: 300px;
+
+      input{
+        padding: 14px 30px;
+        max-width: 253px;
+        border: 0;
+        font-family: gilroy;
+
+        &:focus{
+          outline: 0;
+        }
+      }
+
+      button{
+        padding: 13px;
+        background: $main-color;
+        border: 0;
+        margin: 0 0 0 -5px;
+        cursor: pointer;
+
+        &:focus{
+          outline: 0;
+        }
+      }
+    }
   }
 }
-
-// .move-sec-video-left {
-//   animation-name: move-sec-video-left;
-//   animation-duration: 2s;
-//   transform: translate(-330px, -35px) scale(1.5);
-//   z-index: 20 !important;
-// }
-
-// .move-sec-video-right {
-//   animation-name: move-sec-video-right;
-//   animation-duration: 2s;
-//   transform: translate(0px, 0px) scale(1);
-//   z-index: 20 !important;
-// }
-
-// .move-main-video-right {
-//   animation-name: move-main-video-right;
-//   animation-duration: 2s;
-//   transform: translate(330px, 35px) scale(0.7);
-//   z-index: 20 !important;
-// }
-
-// .move-main-video-left {
-//   animation-name: move-main-video-left;
-//   animation-duration: 2s;
-//   transform: translate(0px, 0px) scale(1);
-//   z-index: 20 !important;
-// }
-
-// @keyframes move-sec-video-left {
-//   from {
-//     transform: translate(0, 0) scale(1);
-//   }
-//   to {
-//     transform: translate(-330px, -35px) scale(1.5);
-//   }
-// }
-
-// @keyframes move-sec-video-right {
-//   from {
-//     transform: translate(-330px, -35px) scale(1.5);
-//   }
-//   to {
-//     transform: translate(0, 0) scale(1);
-//   }
-// }
-
-// @keyframes move-main-video-right {
-//   from {
-//     transform: translate(0px, 0px) scale(1);
-//   }
-//   to {
-//     transform: translate(330px, 35px) scale(0.7);
-//   }
-// }
-
-// @keyframes move-main-video-left {
-//   from {
-//     transform: translate(330px, 35px) scale(0.7);
-//   }
-//   to {
-//     transform: translate(0, 0) scale(1);
-//   }
-// }
