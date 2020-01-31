@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-  font-family: Gilroy-SemiBold;
+  font-family: gilroy-SemiBold;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -52,7 +52,7 @@ h2 {
 }
 
 p {
-  font-family: Gilroy;
+  font-family: gilroy;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -60,7 +60,7 @@ p {
 }
 
 .sub-title {
-  font-family: Gilroy-semiBold;
+  font-family: gilroy-semiBold;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -68,8 +68,17 @@ p {
   text-transform: uppercase;
 }
 
+.sub-title2 {
+  font-family: gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
 .body-2 {
-  font-family: Gilroy;
+  font-family: gilroy;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -91,6 +100,29 @@ p {
   max-height: -moz-min-content;
   max-height: min-content;
   height: 100%;
+}
+
+.secondary-button {
+  border: 1px solid #06cb99;
+  padding: 20px 50px;
+  color: #06cb99;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  height: 100%;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.secondary-button:hover {
+  background: #06cb99;
+  color: #ffffff;
 }
 
 header nav {
@@ -265,6 +297,7 @@ header .hero-section .right .main {
 
 .section2 .right h2 {
   text-transform: uppercase;
+  color: #333;
 }
 
 .section2 .right h2 span {
@@ -279,5 +312,110 @@ header .hero-section .right .main {
 .section2 .right a {
   padding: 10px 40px;
   text-transform: uppercase;
+}
+
+.section3 {
+  max-width: 1200px;
+  padding: 100px 50px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section3 .left h6 {
+  color: #06cb99;
+  margin: 0 0 12px 0;
+}
+
+.section3 .left span {
+  color: #06cb99;
+}
+
+.section3 .left p {
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 12px 0 60px 0;
+  max-width: 340px;
+}
+
+.section3 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 60px 0 0 50px;
+}
+
+.section3 .right a {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.section3 .right h4 {
+  color: #06cb99;
+  margin: 25px 0 12px 0;
+}
+
+.section3 .right .food-table .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section3 .right .food-table .row .food-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
+  margin: 0 25px 25px 0;
+  max-height: 130px;
+}
+
+.section3 .right .food-table .row .food-item .details {
+  padding: 20px;
+  text-align: center;
+}
+
+.section3 .right .food-table .row .food-item .details h6 {
+  font-family: gilroy-SemiBold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #333;
+}
+
+.section3 .right .food-table .row .food-item .details p {
+  font-family: gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: rgba(69, 81, 84, 0.77);
+  margin: 15px 0;
+}
+
+.section3 .right .food-table .row .food-item .details h5 {
+  font-family: gilroy-SemiBold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #06cb99;
 }
 /*# sourceMappingURL=style.css.map */
