@@ -418,4 +418,87 @@ header .hero-section .right .main {
   text-align: center;
   color: #06cb99;
 }
+
+.section4 {
+  text-align: center;
+}
+
+.section4 h5 {
+  color: #06cb99;
+}
+
+.section4 h2 {
+  margin: 13px 0;
+  text-transform: capitalize;
+}
+
+.section4 h6 {
+  color: #555;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.section4 .marquee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 64px 0 0 0;
+  overflow: hidden;
+}
+
+.section4 .marquee1, .section4 .marquee2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  height: 100%;
+  -webkit-animation-name: moveTweetsLeft;
+          animation-name: moveTweetsLeft;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.section4 .marquee1 img, .section4 .marquee2 img {
+  display: block;
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  height: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
+  margin: 0 10px;
+}
+
+@-webkit-keyframes moveTweetsLeft {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-1908px);
+            transform: translateX(-1908px);
+  }
+}
+
+@keyframes moveTweetsLeft {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-1908px);
+            transform: translateX(-1908px);
+  }
+}
 /*# sourceMappingURL=style.css.map */
