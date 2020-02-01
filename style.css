@@ -160,6 +160,140 @@ a {
   }
 }
 
+.move-sec-video-left {
+  -webkit-animation-name: move-sec-video-left;
+          animation-name: move-sec-video-left;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transform: translate(-250px, -35px) scale(1.5);
+          transform: translate(-250px, -35px) scale(1.5);
+  z-index: 1 !important;
+}
+
+.move-sec-video-right {
+  -webkit-animation-name: move-sec-video-right;
+          animation-name: move-sec-video-right;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transform: translate(0px, 0px) scale(1);
+          transform: translate(0px, 0px) scale(1);
+}
+
+.move-main-video-right {
+  -webkit-animation-name: move-main-video-right;
+          animation-name: move-main-video-right;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transform: translate(250px, 35px) scale(0.72);
+          transform: translate(250px, 35px) scale(0.72);
+  z-index: -2 !important;
+}
+
+.move-main-video-left {
+  -webkit-animation-name: move-main-video-left;
+          animation-name: move-main-video-left;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transform: translate(0px, 0px) scale(1);
+          transform: translate(0px, 0px) scale(1);
+}
+
+@-webkit-keyframes move-sec-video-left {
+  from {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+    z-index: -2;
+  }
+  to {
+    -webkit-transform: translate(-250px, -35px) scale(1.5);
+            transform: translate(-250px, -35px) scale(1.5);
+    z-index: 1;
+  }
+}
+
+@keyframes move-sec-video-left {
+  from {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+    z-index: -2;
+  }
+  to {
+    -webkit-transform: translate(-250px, -35px) scale(1.5);
+            transform: translate(-250px, -35px) scale(1.5);
+    z-index: 1;
+  }
+}
+
+@-webkit-keyframes move-sec-video-right {
+  from {
+    -webkit-transform: translate(-250px, -35px) scale(1.5);
+            transform: translate(-250px, -35px) scale(1.5);
+  }
+  to {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes move-sec-video-right {
+  from {
+    -webkit-transform: translate(-250px, -35px) scale(1.5);
+            transform: translate(-250px, -35px) scale(1.5);
+  }
+  to {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
+}
+
+@-webkit-keyframes move-main-video-right {
+  from {
+    -webkit-transform: translate(0px, 0px) scale(1);
+            transform: translate(0px, 0px) scale(1);
+    z-index: 1;
+  }
+  to {
+    -webkit-transform: translate(250px, 35px) scale(0.72);
+            transform: translate(250px, 35px) scale(0.72);
+    z-index: -2;
+  }
+}
+
+@keyframes move-main-video-right {
+  from {
+    -webkit-transform: translate(0px, 0px) scale(1);
+            transform: translate(0px, 0px) scale(1);
+    z-index: 1;
+  }
+  to {
+    -webkit-transform: translate(250px, 35px) scale(0.72);
+            transform: translate(250px, 35px) scale(0.72);
+    z-index: -2;
+  }
+}
+
+@-webkit-keyframes move-main-video-left {
+  from {
+    -webkit-transform: translate(250px, 35px) scale(0.7);
+            transform: translate(250px, 35px) scale(0.7);
+  }
+  to {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes move-main-video-left {
+  from {
+    -webkit-transform: translate(250px, 35px) scale(0.7);
+            transform: translate(250px, 35px) scale(0.7);
+  }
+  to {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,8 +538,11 @@ header .hero-section .right .main {
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
-  margin: 0 25px 25px 0;
   max-height: 130px;
+}
+
+.section3 .right .food-table .row .food-item:nth-child(1) {
+  margin: 0 25px 25px 0;
 }
 
 .section3 .right .food-table .row .food-item .details {
@@ -446,6 +583,7 @@ header .hero-section .right .main {
 
 .section4 {
   text-align: center;
+  padding: 50px 0;
 }
 
 .section4 h5 {
